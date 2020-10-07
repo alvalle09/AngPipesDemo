@@ -10,6 +10,7 @@
             class="badge">
             {{ server.status }}
           </span>
+          <!-- keep in mind, the order of the chained pipes matters here -->
           <strong>{{ server.name }}</strong> | 
           {{ server.instanceType | uppercase }} |
           {{ server.started | date:'fullDate' | uppercase }}
